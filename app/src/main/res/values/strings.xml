@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">XmailApp</string>
+    <string name="Titulli_Dergim">XmailApp</string>
+    <string name="Teksti_shpjegues">Plotesoni te gjitha fushat sakte dhe kliko dergo.</string>
+    <string name="fusha_marresit">Adresa Marresit*</string>
+    <string name="fusha_deguesit">Adresa Derguesit*</string>
+    <string name="fusha_subjektit">Subjekti*</string>
+    <string name="fusha_mesazhit">Teksti i mesazhit*</string>
+    <string name="btn_dergo">Dergo</string>
+</resources>
