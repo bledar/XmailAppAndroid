@@ -1,32 +1,21 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
+    android:layout_height="match_parent" android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="0dp"
     android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".DergoMail"
     android:background="#fafafa"
     android:id="@+id/nderfaqja">
-
-    <TextView android:text="@string/Titulli_Dergim" android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:focusableInTouchMode="false"
-        android:padding="5dp"
-        android:textColor="#1bbc9b"
-        android:textStyle="bold"
-        android:shadowColor="#64444444"
-        android:textSize="40sp"
-        android:fontFamily="sans-serif-black"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/textView" />
-
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
         android:inputType="textEmailAddress"
         android:ems="10"
         android:id="@+id/fusha_marresi"
-        android:layout_below="@+id/textView"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:textSize="20sp"
@@ -34,11 +23,6 @@
         android:minHeight="40dp"
         android:background="@drawable/edittext_shadow"
         android:hint="@string/fusha_marresit"
-        android:paddingTop="5dp"
-        android:paddingBottom="5dp"
-        android:paddingLeft="0dp"
-        android:paddingRight="0dp"
-        android:textIsSelectable="false"
         android:singleLine="true"
         android:enabled="true"
         android:focusable="true" />
@@ -54,14 +38,14 @@
         android:minHeight="40dp"
         android:background="@drawable/edittext_shadow"
         android:hint="@string/fusha_deguesit"
-        android:paddingTop="5dp"
-        android:paddingBottom="5dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
         android:paddingLeft="0dp"
         android:paddingRight="0dp"
         android:textIsSelectable="true"
         android:layout_below="@+id/fusha_marresi"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="5dp"
         android:layout_alignEnd="@+id/fusha_marresi"
         android:enabled="true"
         android:focusable="true" />
@@ -84,21 +68,19 @@
         android:textIsSelectable="true"
         android:layout_below="@+id/fusha_derguesi"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="5dp"
         android:layout_alignEnd="@+id/fusha_marresi"
         android:enabled="true"
         android:focusable="true" />
 
     <EditText
         android:inputType="textMultiLine"
-        android:focusable="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
         android:id="@+id/fusha_mesazhit"
-        android:textSize="15sp"
+        android:textSize="18sp"
         android:textColorHint="#7b7b7b"
-        android:minHeight="40dp"
         android:background="@drawable/edittext_shadow"
         android:hint="@string/fusha_mesazhit"
         android:paddingTop="5dp"
@@ -108,21 +90,20 @@
         android:textIsSelectable="true"
         android:layout_below="@+id/fusha_subjektit"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="5dp"
         android:layout_alignEnd="@+id/fusha_marresi"
-        android:lines="4"
         android:enabled="true"
         android:scrollIndicators="left"
         android:layout_alignParentEnd="false"
         android:editable="true"
-        android:focusableInTouchMode="true" />
-
+        android:focusableInTouchMode="false"
+            android:layout_alignParentBottom="true" />
+<!--
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/btn_dergo"
-        android:background="@drawable/btn_dergo_bg"
-        android:id="@+id/btn_dergo"
+
+
         android:textSize="20sp"
         android:layout_below="@+id/fusha_mesazhit"
         android:layout_alignParentStart="true"
@@ -130,16 +111,11 @@
         android:layout_alignEnd="@+id/fusha_mesazhit"
         android:textColor="#f1f1f1"
         android:fontFamily="sans-serif-bold"
-        android:onClick="dergoMail"/>
-
-    <ProgressBar
-        android:id="@+id/progBar"
-        style="?android:attr/progressBarStyleLarge"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/btn_dergo"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="24dp" />
+        android:id="@+id/btn_dergo"
+        android:onClick="dergoMail"
+        android:text="@string/btn_dergo"
+        android:background="@drawable/btn_dergo_bg"/>
+-->
 
 
 </RelativeLayout>

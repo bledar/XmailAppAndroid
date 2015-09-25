@@ -6,21 +6,21 @@
     <!-- Bottom right side 2dp Shadow -->
     <item >
         <shape android:shape="rectangle">
-            <solid android:color="#999999" />
+            <solid android:color="#1bbc9b" />
         </shape>
     </item>
 
     <!-- Bottom 2dp Shadow -->
     <item>
         <shape android:shape="rectangle">
-            <solid android:color="#999999" />
+            <solid android:color="#1bbc9b" />
         </shape>
     </item>
 
     <!-- White Top color -->
-    <item android:bottom="1px" android:right="0px">
+    <item android:bottom="2px" android:right="0px">
         <shape android:shape="rectangle">
-            <solid android:color="#f1f1f1" />
+            <solid android:color="#4c4c4c" />
         </shape>
     </item>
 </layer-list>

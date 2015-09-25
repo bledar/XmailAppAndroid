@@ -1,6 +1,15 @@
-<menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools" tools:context=".DergoMail">
-    <item android:id="@+id/action_settings" android:title="@string/app_name"
-        android:orderInCategory="100" app:showAsAction="never" />
-</menu>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/btn_dergo"
+        android:text="@string/btn_dergo"
+        android:background="@drawable/btn_dergo_bg"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:icon="@android:drawable/ic_dialog_email"
+        android:title="@string/btn_dergo"/>
+    <item
+        android:id="@+id/action_settings"
+        android:title="Settings">
+    </item>
+</menu> 

@@ -1,11 +1,31 @@
-<resources>
+<!--<resources>
+    &lt;!&ndash; inherit from the material theme &ndash;&gt;
 
-    <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
+    <style name="AppTheme" parent="android:Theme.Material">
+        &lt;!&ndash; Main theme colors &ndash;&gt;
+        &lt;!&ndash;   your app branding color for the app bar &ndash;&gt;
+        <item name="android:colorPrimary">@color/primary</item>
+        &lt;!&ndash;   darker variant for the status bar and contextual app bars &ndash;&gt;
+        <item name="android:colorPrimaryDark">@color/primary_dark</item>
+        &lt;!&ndash;   theme UI controls like checkboxes and text fields &ndash;&gt;
+        <item name="android:colorAccent">@color/accent</item>
     </style>
-    <style name="WindowTitleBackground">
-        <item name="android:background">@color/titlebackgroundcolor</item>
-    </style>
+</resources>-->
+
+<resources>
+<style name="AppBaseTheme" parent="@style/Theme.AppCompat.Light">
+    <item name="actionBarStyle">@style/ActionBarStyle</item>
+</style>
+
+<style name="ActionBarStyle" parent="@style/Widget.AppCompat.Light.ActionBar.Solid">
+    <item name="titleTextStyle">@style/TitleBarTextColor</item>
+</style>
+
+<style name="TitleBarTextColor" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+    <item name="android:textColor">@color/actionBarColorTX</item>
+</style>
+<!-- Application theme. -->
+<style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+</style>
 
 </resources>
