@@ -42,7 +42,7 @@
         android:paddingBottom="10dp"
         android:paddingLeft="0dp"
         android:paddingRight="0dp"
-        android:textIsSelectable="true"
+        android:textIsSelectable="false"
         android:layout_below="@+id/fusha_marresi"
         android:layout_alignParentStart="true"
         android:layout_marginTop="5dp"
@@ -65,7 +65,7 @@
         android:paddingBottom="5dp"
         android:paddingLeft="0dp"
         android:paddingRight="0dp"
-        android:textIsSelectable="true"
+        android:textIsSelectable="false"
         android:layout_below="@+id/fusha_derguesi"
         android:layout_alignParentStart="true"
         android:layout_marginTop="5dp"
@@ -87,7 +87,7 @@
         android:paddingBottom="5dp"
         android:paddingLeft="0dp"
         android:paddingRight="0dp"
-        android:textIsSelectable="true"
+        android:textIsSelectable="false"
         android:layout_below="@+id/fusha_subjektit"
         android:layout_alignParentStart="true"
         android:layout_marginTop="5dp"
@@ -96,8 +96,10 @@
         android:scrollIndicators="left"
         android:layout_alignParentEnd="false"
         android:editable="true"
-        android:focusableInTouchMode="false"
-            android:layout_alignParentBottom="true" />
+        android:focusableInTouchMode="true"
+            android:layout_alignParentBottom="true"
+        android:gravity="top"
+        android:focusable="true" />
 <!--
     <Button
         android:layout_width="wrap_content"
