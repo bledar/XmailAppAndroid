@@ -8,8 +8,4 @@
         android:showAsAction="always"
         android:icon="@android:drawable/ic_dialog_email"
         android:title="@string/btn_dergo"/>
-    <item
-        android:id="@+id/action_settings"
-        android:title="Settings">
-    </item>
 </menu> 
