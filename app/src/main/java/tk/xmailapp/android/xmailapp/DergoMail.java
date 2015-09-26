@@ -61,10 +61,10 @@ public class DergoMail extends Activity {
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.menu_dergo_mail, menu);
-        fusha_marresit.setText("bledi-1@live.com");
+        /*fusha_marresit.setText("bledi-1@live.com");
         fusha_dergusit.setText("bledihaxhia@gmail.com");
         fusha_subjektit.setText("dergoje");
-        fusha_mesazhit.setText("Nje mesazh i derguar nga android.");
+        fusha_mesazhit.setText("Nje mesazh i derguar nga android.");*/
         return true;
     }
 
@@ -128,7 +128,6 @@ public class DergoMail extends Activity {
                     case 200:
                         HttpEntity entity = response.getEntity();
                         if(entity != null) {
-
                             String responseBody = EntityUtils.toString(entity);
                             Log.v("Gabim", "Pergjigjia e serverit: "+responseBody);
                             njoftimi= ""+responseBody;
@@ -140,7 +139,6 @@ public class DergoMail extends Activity {
                 Log.v("Gabim", "Kodi i serverit: "+responseCode);
 
             } catch (ClientProtocolException e) {
-
                 Log.v("Gabim", "Gabin ne protokoll");
                 sukses=false;
 
@@ -161,15 +159,13 @@ public class DergoMail extends Activity {
             }else {
                 Njoftimi();
             }
-
-
         }
     }
 
     public void Njoftimi(){
         AlertDialog.Builder Alerti = new AlertDialog.Builder(DergoMail.this);
         Alerti.setCancelable(true);
-        Alerti.setMessage("Problem ne dergimin e te dhenave ne server.\n Sigurohuni qe keni nje lidhje me internetin!");
+        Alerti.setMessage("Problem ne dergimin e te dhenave ne server.\n Kontrollo lidhjen e internetit!");
         Alerti.setTitle("GABIM KOMUNIKIMI");
         AlertDialog dialog = Alerti.create();
         dialog.show();

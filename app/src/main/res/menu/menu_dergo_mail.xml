@@ -3,9 +3,10 @@
     <item
         android:id="@+id/btn_dergo"
         android:text="@string/btn_dergo"
-        android:background="@drawable/btn_dergo_bg"
         android:orderInCategory="100"
         android:showAsAction="always"
-        android:icon="@android:drawable/ic_dialog_email"
-        android:title="@string/btn_dergo"/>
+        android:icon="@drawable/ic_action_send"
+        android:title="@string/btn_dergo"
+        />
+
 </menu> 
